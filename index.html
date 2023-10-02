@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./src/styles.css">
+    
+</head>
+<body>    
+<div class="container">
+
+        <h1 class="text-info text-center bg-dark ">BLOGGING WEBSITE</h1>
+
+           <div class="blog" id="total">
+             <h3 id="title">BLOG TITLE</h3>
+              <div id="content">
+                
+              </div>
+              <div >
+                <h5>COMMENTS
+                  <button onclick="addcomment()">+</button>
+                  <div id="dialog">
+                    <input type = "text" id = "comName"
+                    placeholder = "enter your name"/>
+                    <textarea id="comcont" placeholder="comment Here"></textarea>
+                    <button onclick="mergeComment()">COMMENT</button>
+                    </div>
+                </h5>
+                <div class="comment">
+                    <h6>commenter name</h6>
+                    <p>comments</p>
+                 </div>
+               </div>
+               
+           </div>
+           <section id="add_blog">
+             <input type="text" id="bName" 
+             placeholder="Enter Blog Title">
+             <textarea id="bContent"
+              placeholder="Write Here"></textarea>
+              <button type="submit" onclick="addblog()">ADDBLOG</button>
+           </section>
+    </div>
+   
+
+    
+    <script src="./src/index.js"></script>
+    <script>
+      document.getElementById("dialog").style.display = "none";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+     crossorigin="anonymous"></script>
+</body>
+</html>
